@@ -7,6 +7,12 @@ The folder "Artefact" contains the code of the game, fortend coded in HTML, back
 
 The folder "Report" is an html report of the project which explains how it was built, how it works and more.
 
+## DEMO
+<video width="320" height="240" controls>
+  <source src="Report/images/toptrumps.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 In my game, each of the players has 15 cards representing different planes with various specs like speed, range, and passenger capacity. Players take turns selecting a spec, and whoever has the highest value wins the round and collects the cards. The first player to reach 30 cards wins the game.
 
 The game has 3 gamemodes:
