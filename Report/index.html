@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Meeting the Brief</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+table {
+border-collapse: collapse;
+margin-left: auto;
+margin-right: auto;
+}
+
+th, td {
+border: 1px solid black;
+padding: 8px;
+text-align: left;
+}
+
+th {
+background-color: #f2f2f2;
+}
+td:nth-child(2) a {
+color: #0072c6;
+text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Meeting the Brief</a>
+    <a href="investigationAndPlan.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Investigation and Plan</a>
+    <a href="design.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Design</a>
+    <a href="implementation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Implementation</a>
+    <a href="testing.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Testing</a>
+    <a href="evaluation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Evaluation</a>
+    <a href="references.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">References</a>
+    <a href="wordCount.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Word Count</a>
+  </div>
+</div>
+  
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Computer Science Coursework</h1>
+  <p class="w3-xlarge">Examination number: 142150</p>
+  <h1 class="w3-margin w3-jumbo">Meeting the Brief</h1>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Top Trumps: Airplanes</h1>
+      <h5 class="w3-padding-32">For my leaving certificate computer science project I decided to create a Top Trumps, a game which I really like.
+      Putting together two of my biggest passions in life, airplanes and computer sicence, this is what I created:</h5>
+    </div>
+    <div class="w3-row-padding w3-padding-64 w3-container">
+      <div class="w3-content">
+        <video controls width="800">
+          <source src="images/toptrumps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h2>Basic Requirements:</h2>
+      <table>
+        <tr>
+          <th>Requirement</th>
+          <th>Meets Requirement?</th>
+        </tr>
+        <tr>
+          <td>The user should be able to interact with the model so that they can play the game to completion.</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>The game should include a certain amount of randomness so that it can behave differently each time it is run.</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Accept a minimum of three different inputs – all data should be validated using appropriately defined validation rules.</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>The game should be interactive and operable in a variety of modes - single player, multiplayer and allow simulation play.</td>
+          <td>Yes</td>
+        </tr>
+      </table>
+      <br>
+      <h2>Advanced Requirements:</h2>
+      <table>
+        <tr>
+          <th>Requirement</th>
+          <th>Meets Requirement?</th>
+        </tr>
+        <tr>
+          <td>Extend the basic model so that each time it is run, it stores results data from the game that has been played in a file or database e.g. fastest time, top score, previous results, strategy data, etc.</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Develop algorithms that perform some statistical analysis e.g. find the frequency, mean, median and mode of the aforementioned data set, and effectively communicate the resulting information in a graphical format.</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Use the model to test hypotheses (such as answering ‘what-if’ type questions) and make future predictions by changing parameters within the game.</td>
+          <td>Yes</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Third grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h2  class="w3-padding-16">How does my game meet the requirements?</h2>
+      <h3 class="w3-padding-8">Basic requirements:</h3>
+      <ul>
+      <li>My game allows the players to interact by clicking buttons.</li>
+      <li>It has certain amount of randomness and behaves differently each time it is run by shuffling the deck of cards.</li>
+      <li>It has many inputs (buttons).</li>
+      <li>It can be played in single player, multiplayer and simulation.</li>
+      </ul>
+    </div>
+    <div class="w3-twothird">
+      <h3 class="w3-padding-8">Advanced requirements:</h3>
+      <ul>
+      <li>My game stores data about the last three games played (winner and game duration). This data is stored in the <strong>window local storage</strong>.</li>
+      <li>It has algorithms that perform statistical analysis that find <strong>frequency, mean, median and mode</strong> of the clicked stats during the game. Also shown in a graphical format.</li>
+      <li>I used my model to test a <strong>hypothesis</strong>, explained in the testing section.</li>
+      </ul>
+    </div>
+    
+  </div>
+</div>
+  
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    
+ </div>
+ <p>Template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+</script>
+
+</body>
+</html>

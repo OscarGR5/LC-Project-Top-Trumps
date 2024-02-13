@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Testing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+  td:nth-child(2) a {
+  color: #0072c6;
+  text-decoration: underline;
+}
+.snippet {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.snippet pre {
+  margin: 0;
+}
+
+.snippet code {
+  font-family: Consolas, monospace;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Meeting the Brief</a>
+    <a href="investigationAndPlan.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Investigation and Plan</a>
+    <a href="design.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Design</a>
+    <a href="implementation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Implementation</a>
+    <a href="testing.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Testing</a>
+    <a href="evaluation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Evaluation</a>
+    <a href="references.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">References</a>
+    <a href="wordCount.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Word Count</a>
+  </div>
+</div>
+  
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Testing</h1>
+  <p class="w3-xlarge">Examination number: 142150</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Test Case</th>
+            <th>Test Case Description</th>
+            <th>Expected Result</th>
+            <th>Actual Result</th>
+            <th>Pass/Fail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Test if the game loads with 30 cards in total and each player has 15 cards.</td>
+            <td>The game should load with a total of 30 cards, with each player starting with 15 cards.</td>
+            <td>30 cards are loaded and each player has 15 cards.</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Test if the player loses a turn, they lose a card and the other player gains it.</td>
+            <td>When a player loses a turn, they should lose a card and the other player should gain it.</td>
+            <td>Player 1 loses a turn and a card, while Player 2 gains the card.</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Test if the game displays a message when a player has 0 cards left.</td>
+            <td>When a player has 0 cards left, the game should display a message indicating that they have lost/won.</td>
+            <td>Player 1 has 0 cards left and a message is displayed indicating they have lost/won</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Test if the game modes buttons work.</td>
+            <td>The game modes buttons should switch between single player, multiplayer, and simulation play modes.</td>
+            <td>Clicking on each button switches the game mode accordingly.</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Test if the game modes buttons disable during game.</td>
+            <td>The game modes buttons should disable when a game is being played to avoid confusion.</td>
+            <td>The buttons except reset are disabled.</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Test if the stat buttons are showing and hiding.</td>
+            <td>The stat buttons should be hidden unless if it is the player's turn.</td>
+            <td>Stat buttons are hidden unless and visible during the player's turn.</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Test if the game ends when one player has all the cards.</td>
+            <td>When one player has all the cards, the game should end and a message should be displayed indicating the winner.</td>
+            <td>Player 1 has all the cards and a message is displayed indicating they have won.</td>
+            <td>Pass</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Test if the game allows for tie-breakers.</td>
+            <td>If a round ends in a tie, a tie-breaker should be played to determine the winner.</td>
+            <td>A round ends in a tie and a tie-breaker round is played.</td>
+            <td>Fail</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Test if the game uses the correct card stats.</td>
+            <td>When a player selects a card, the game should use the card's stats.</td>
+            <td>Player 1 selects a card and the game uses the correct card's stats</td>
+            <td>Pass</td>
+          </tr>
+          <td>10</td>
+            <td>Test if the game allows for players to select a stat.</td>
+            <td>When a player selects a stat, the game should compare the selected stat of each player's card, and the player with the highest stat wins the round.</td>
+            <td>Player 1 selects a stat and their card has a higher value than Player 2's card, so they win the round.</td>
+            <td>Pass</td>
+          </tr>
+          <td>11</td>
+            <td>Test if the game allows for players to select a stat.</td>
+            <td>When a player selects a stat, the game should compare the selected stat of each player's card, and the player with the highest stat wins the round.</td>
+            <td>Player 1 selects a stat and their card has a higher value than Player 2's card, so they win the round.</td>
+            <td>Pass</td>
+          </tr>
+          <td>12</td>
+            <td>Test if the data about the game is being stored in the window local storage.</td>
+            <td>All the data recorded during the game should be stored.</td>
+            <td>Data is stored.</td>
+            <td>Pass</td>
+          </tr>
+          <td>13</td>
+            <td>Test if the analysis appears after each game. In addition the pie chart should be reset after each game.</td>
+            <td>The game analysis should appear after each game and the chart should have been cleaned from the previous game data.</td>
+            <td>The analysis appears and the chart is cleaned from the previous game data.</td>
+            <td>Pass</td>
+          </tr>
+        </tbody>
+      </table>  
+    </div>
+
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img style="margin-right: 150px; margin-top:30px; height:250px;" src="images/bug.png" alt="bug">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Finding bugs</h1>
+      <h6 class="w3-padding-16">During the testing of the game, I found the following bugs:</h6>
+      <ul>
+        <li>If the game mode is swapped from simulation to another very quickly, a stat button will be clicked by the computer even though it is not its turn.  This is due to a timeout set in the code.</li>
+        <li>During the computer's turn player 1 is able to click on one of the computer's stat buttons disturbing its input.</li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 class="w3-padding-16">Hypothesis - What if...</h1>
+      <h6>• At the moment when the game is in simulation mode the computer randomly chooses a stat to compare. But what if one of the simulated players was able to detect some specific type of airplanes and choose a stat accordingly? Would that make it win more often?</h6>
+      <h6>• In order to test that, I am going to modify my code to make the player 1 (in simulation mode) able to detect if its card is a big airplane (Airbus or Boeing). If that's the case, it will choose the stat "payload" to compare, which will increase the chances to win the turn.</h6>
+      <h6>• By checking if player 1 won the last three games using this strategy I will discover if this is making player 1 more likely to win.</h6>
+      <h6><strong>Hypothesis: Player 1 wins more games if it is able to detect a bigger airplane and choose a specific stat.</strong></h6>
+      <br>
+
+      <h6>Original code:</h6>
+      <pre class="snippet"><code>
+        if (currentState == State.Simulation && currentPlayer === 1) {
+            const button = pickRandom(p1buttons);
+            setTimeout(() => {
+                button.style.background = "green";
+            }, responseTime / 2);
+            setTimeout(() => {
+                button.click();
+                button.style.background = "";
+            }, responseTime);
+        }
+      </code></pre>
+      
+      <h6>Modified code:</h6>
+      <pre class="snippet"><code>
+        if (currentState == State.Simulation && currentPlayer === 1) {
+            const Tcard = p1Card.name.split(" ").shift();
+            console.log(Tcard);
+            let button;
+            if (Tcard == "Airbus" || Tcard == "Boeing") {
+                button = p1buttons[5];
+                console.log(button);
+            } else {
+                button = pickRandom(p1buttons);
+            }
+    
+            setTimeout(() => {
+                button.style.background = "green";
+            }, responseTime / 2);
+            setTimeout(() => {
+                button.click();
+                button.style.background = "";
+            }, responseTime);
+        }
+      </code></pre>
+      <h6><strong>Note:</strong> the modified code will be commented in the Javascript file, if willing to test, comment the original and uncomment the modified. Code fragment inside stateMachine function.</h6>
+      <br>
+      <h6><strong>Results:</strong></h6>
+      <h6>Data of six games with <strong>original</strong> code:</h6>
+      <table>
+        <thead>
+          <tr>
+            <th>Who won?</th>
+            <th>Game duration (in seconds)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Player 2</td>
+            <td>25.41</td>
+          </tr>
+          <tr>
+            <td>Player 1</td>
+            <td>28.90</td>
+          </tr>
+          <tr>
+            <td>Player 2</td>
+            <td>22.79</td>
+          </tr>
+          <tr>
+            <td>Player 2</td>
+            <td>26.17</td>
+          </tr>
+          <tr>
+            <td>Player 1</td>
+            <td>23.12</td>
+          </tr>
+          <tr>
+            <td>Player 1</td>
+            <td>26.89</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h6>Data of six games with <strong>modified</strong> code:</h6>
+      <table>
+        <thead>
+          <tr>
+            <th>Who won?</th>
+            <th>Game duration (in seconds)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Player 1</td>
+            <td>28.17</td>
+          </tr>
+          <tr>
+            <td>Player 1</td>
+            <td>26.44</td>
+          </tr>
+          <tr>
+            <td>Player 1</td>
+            <td>28.88</td>
+          </tr>
+          <tr>
+            <td>Player 1</td>
+            <td>24.57</td>
+          </tr>
+          <tr>
+            <td>Player 2</td>
+            <td>35.65</td>
+          </tr>
+          <tr>
+            <td>Player 1</td>
+            <td>28.17</td>
+          </tr>
+        </tbody>
+      </table>
+      <h6 class="w3-padding-16">From the results above, we can clearly appreciate that Player 1 won more times with the modified code. This demonstrates that the my <strong>hypothesis is valid.</strong> Player 1 does win more games when it detects bigger airplanes and chooses payload to compare.</h6>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <p>Template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script></script>
+
+
+</body>
+</html>

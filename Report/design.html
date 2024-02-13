@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Meeting the Brief</a>
+    <a href="investigationAndPlan.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Investigation and Plan</a>
+    <a href="design.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Design</a>
+    <a href="implementation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Implementation</a>
+    <a href="testing.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Testing</a>
+    <a href="evaluation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Evaluation</a>
+    <a href="references.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">References</a>
+    <a href="wordCount.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Word Count</a>
+  </div>
+</div>
+  
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Design</h1>
+  <p class="w3-xlarge">Examination number: 142150</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div style="width: 100%;" class="w3-twothird">
+      <h2 class="w3-padding-32" >Interface Design</h2>
+      <h6 class="w3-padding-8">I think simplicity is really useful when it comes to designing game interfaces, especially if it is going to be played by people of different ages.</h6>
+      <h6 class="w3-padding-8">Here is a wireframe of the interface of my game:</h6>
+      <img src="images/wireframe .jpg" alt="wireframe">
+      <br><br>
+      <h6 class="w3-padding-16">The interface of my game is mainly formed by two cards (player 1 and player 2). On the middle of the screen, there are the buttons to select the gamemode (single player, multiplayer, simulation)and one to reset the game. On te side of each card there will be a WINS counter.</h6>
+      <h6 class="w3-padding-8">Cards: each card has six buttons to pick among the following stats:
+        <ul>
+          <li>First Flight</li>
+          <li>Cruise Speed</li>
+          <li>Range</li>
+          <li>Wingspan</li>
+          <li>Seats</li>
+          <li>Payload</li>
+        </ul>
+        The buttons show when it's the player's turn and hide when it isn't.<br>
+        Each card represents a plane, on top of each card the name of the plane and its picture will update after every round.<br>
+        On the bottom of the cards there is a cards counter to show to the player how many cards has left.   
+      </h6>
+      <h2 class="w3-padding-16" >Simplified Flowchart, Use of Abstraction</h2>
+      <img style="margin: 10px;"src="images/flowchart.png" alt="flowchart">
+      <h6 class="w3-padding-8">My game is coded using Javascript, and runs on an HTML website styled with CSS.</h6>
+      <h6 class="w3-padding-8">The game has 5 states:</h6>
+      <ul>
+        <li>Idle: allows to select a game mode and a same amount of cards are given to each player.</li>
+        <li>Single Player: play against the computer. Computer <strong>response time gets faster</strong> as it wins cards.</li>
+        <li>Multiplayer: two players.</li>
+        <li>Simulation: computer vs computer. <strong>Response time gets faster</strong> as they wins cards, else the game could last hours.</li>
+        <li>Game Over: when a player wins the game is over, the game state is switched to Idle and the cards are shuffled and given over again.</li>
+      </ul>
+      <h6 class="w3-padding-8">The game can be reset at any time by pressing the reset button, which changes the game state to Idle to start playing a new game.</h6>
+      <h6 class="w3-padding-8">When a stat button is pressed the two cards' stats are compared, wins the highest value except the First Flight stat, the smallest wins.</h6>
+      <h6 class="w3-padding-8">Eg. Player 1 First Flight: 1967  |  Player 2 First Flight: 2000  |  Player 1 wins.</h6>
+      <h6 class="w3-padding-8">Eg. Player 1 Range: 8500  |  Player 2 Range: 12300  |  Player 2 wins.</h6>
+      <br>
+      <h6 class="w3-padding-8">Classes:</h6>
+      <h6>There are to classes: <strong>State</strong> (game states) and <strong>Input</strong> (game mode buttons)</h6>
+      <br>
+      <h6 class="w3-padding-8">Function library:</h6>
+      <ul>
+        <li>stateMachine(): changes the game states.</li>
+        <li>processState(): change the visibility of the buttons according to the game state.</li>
+        <li>whoWins(): compares stats and returns the winner.</li>
+        <li>shuffleDeck(): shuffles the deck card.</li>
+        <li>pickRandom(): generates a random index value.</li>
+        <li>renderStatsTable(): generates table with statistics.</li>
+        <li>showExplanation(): shows the game instructions.</li>
+        <li>resetDataValues(): reset the data values in the chart.</li>
+      </ul>
+      <br>
+      <h6 class="w3-padding-8"><strong>Meeting advanced requirements:</strong></h6>
+      <h6>• In order to meet the <strong>first advanced requirement</strong>, my Top Trumps will <strong>store data</strong> about the <strong>last three games played</strong>. The data will be <strong>stored in the window local storage.</strong> The reason why I am using the window local storage data insted of a database such as "Firebase" is to avoid third party services/systems.<br>Note: when the game is opened for first time the local storage will be empty.</h6>
+      <h6>• To meet the <strong>second advanced requirement</strong>, my game will perform a <strong>statistical analysis</strong> on how many times each clicked stat won the turn. The data recorded during the game will be shown on a pie chart. This data will be deleted after each game.</h6>
+      <h6>• For the <strong>third advanced requirement</strong> the idea is to give to one of the simulated players the ability of differentiating among cards so that they can choose stats which are more likely to win.</h6>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <p>Template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+</script>
+
+</body>
+</html>

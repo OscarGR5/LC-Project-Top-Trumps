@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Investigation and Plan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Meeting the Brief</a>
+    <a href="investigationAndPlan.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Investigation and Plan</a>
+    <a href="design.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Design</a>
+    <a href="implementation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Implementation</a>
+    <a href="testing.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Testing</a>
+    <a href="evaluation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Evaluation</a>
+    <a href="references.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">References</a>
+    <a href="wordCount.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Word Count</a>
+  </div>
+</div>
+  
+  <!-- Header -->
+  <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Investigation and Plan</h1>
+    <p class="w3-xlarge">Examination number: 142150</p>
+  </header>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h2>Task</h2>
+        <h5 class="w3-padding-16">Design and develop an interactive computer model based on a game of your choice.</h5>
+        <h5>Basic requirements</h5>
+        <ul>
+          <li>Create a computer model of a game of your choice. The user should be able to interact
+            with the model so that they can play the game to completion. The game should include a
+            certain amount of randomness so that it can behave differently each time it is run.</li>
+          <li>Accept a minimum of three different inputs – all data should be validated using
+            appropriately defined validation rules.</li>
+          <li>The game should be interactive and operable in a variety of modes: single player, multi-player and allow simulation play.</li>
+        </ul>
+      </div>
+
+      <div class="w3-third w3-center">
+        <img class="w3-image" style="margin-left: 100px; margin-top: 30px;" src="images/task.png" alt="task">
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <img class="w3-image" style="margin-top: 40px;" src="images/PythonvsJS.png" alt="pythonvsjavascript">
+      </div>
+
+      <div class="w3-twothird">
+        <h2 style="margin-left: 20px;">Choice of programming language</h2>
+        <h6 class="w3-padding-16" style="margin-left: 20px;">First of all, one of the things to keep in mind is that want to make my game on a web page. Python is a powerful language that is used for various applications. It is an excellent language for various other tasks, such as data science and machine learning.<br>But Javascript is one of most obvious languages used to code websites and it also is more likely to work without issues in most web browsers </h6>
+        <h6 class="w3-padding-8" style="margin-left: 20px;">After my research about both languages I decided using <strong>Javascript</strong>. Using this language I can create my game’s interface in a HTML page, which I am pretty familiar with due to my projects during the Computer Science Leaving Cert course.</h6>
+
+
+      </div>
+    </div>
+  </div>
+
+<!-- Third grid -->
+
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h2>Choice of the game</h2>
+        <h6 class="w3-padding-16">In order to choose what game to do I searched for simple famous games on the internet and these were the options:</h6>
+        <ul>
+          <li>Tic tac toe</li>
+          <li>Hangman</li>
+          <li>Pong</li>
+          <li>Checkers</li>
+          <li>Pacman</li>
+          <li>Snake</li>
+          <li>Top Trumps</li>
+          <li>Blackjack</li>
+          <li>Trex</li>
+          <li>Reaction time</li>
+          <li>Memory game</li>
+        </ul>
+        <h6 class="w3-padding-16">Due that I have a better understanding of some of those games, I reduced my option list to:</h6>
+        <ul>
+          <li>Tic Tac Toe</li>
+          <li>Checkers</li>
+          <li>Top Trumps</li>
+          <li>Blackjack</li>
+        </ul>
+        <h6 class="w3-padding-16">From these games, the one that best suits the project minimum requirements is <strong>Top Trumps</strong> since it needs different inputs and can be run in different modes single/multiplayer/simulation. In addition this game is also a proper one to meet the advanced requirements.</h6>
+      </div>
+      
+      <div class="w3-third w3-center">
+        <img class="w3-image" style="margin-left: 100px; margin-top: 30px;" src="images/controller.png" alt="controller">
+      </div>
+    </div>
+  </div>
+
+<!-- Fourth grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <img class="w3-image" style="margin-top: 40px;" src="images/objectives.png" alt="objectives">
+      </div>
+
+      <div class="w3-twothird">
+        <h2 style="margin-left: 20px;">Objectives</h2>
+        <h6 class="w3-padding-16" style="margin-left: 20px;">The main objective of this project is to create a fully functional interactive Top Trumps game with different game modes: single player, multiplayer, simulation play. The game will have different buttons (inputs) to allow the user to choose tha game mode easily.</h6>
+        <h6 class="w3-padding-16" style="margin-left: 20px;">Besides, more advanced objectives will be implementing a system to score results and an algorithm to collect some statistics.</h6>
+      </div>
+    </div>
+  </div>
+
+ <!-- 5th Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird" style="width: 80%">
+      <h2 style="margin-left: 20px; margin-bottom: 15px">Planning the User Interface</h2>
+      <h6 class="w3-padding-8" style="margin-left: 20px;">Due to my personality I definitely will create a simple interface, very intuitive and easy to use.</h6>
+      <h6 class="w3-padding-8" style="margin-left: 20px;">Here are some aspects that I'm planning to implement in my game's UI:</h6>
+      <ul>
+        <li>Two cards, one for each player</li>
+        <li>Each card has its own stat buttons</li>
+        <li>Each card has picture and name of the airplane</li>
+        <li>Cards left counter for each player</li>
+        <li>Game mode buttons on the middle of the screen</li>
+        <li>Help button</li>
+        <li>Graph with statistics</li>
+        <li>Wins counter</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+
+    <p>Template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>
