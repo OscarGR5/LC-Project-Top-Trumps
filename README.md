@@ -24,6 +24,7 @@ A graph of the most winning spec<br>
 Average clicks per spec<br>
 Most clicked spec<br>
 Average game duration (of the last 3 games)
-![image](https://github.com/OscarGR5/LC-Project-Top-Trumps/assets/144812563/a7d6d5f4-634b-4890-9aa8-316ce8fa1f3e)
+<img src="[https://example.com/your_image_url.png](https://github.com/OscarGR5/LC-Project-Top-Trumps/assets/144812563/a7d6d5f4-634b-4890-9aa8-316ce8fa1f3e)" alt="Image Alt Text" width="200">
+
 
 
