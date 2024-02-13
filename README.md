@@ -17,13 +17,9 @@ The game has 3 gamemodes:
   
 - Simulation: pc vs pc
   
-At the end of each game, an analysis is performed:
-
+At the end of each game, an analysis is performed <br>
 A graph of the most winning spec.
-
 Average clicks per spec
-
 Most clicked spec
-
 Average game duration (of the last 3 games)
 
